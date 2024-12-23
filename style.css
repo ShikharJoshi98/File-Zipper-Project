@@ -1,21 +1,48 @@
-html,
-body {
+html, body {
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .text_box {
     padding: 30px;
-    width: 50%;
+    width: 50%; /* 50% width for larger screens */
     height: 100%;
     border: 1px solid lightgray;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    margin: 0 auto; /* Centering the text_box horizontally */
 }
 
+/* Center the buttons */
+.center_buttons {
+    margin: auto;
+    display: block;
+}
 
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .text_box {
+        width: 60%; /* For medium screens, adjust width to 60% */
+        padding: 20px; /* Reduce padding */
+    }
+}
 
-.center_buttons{
-    margin:auto;
-    display:block;
+@media screen and (max-width: 768px) {
+    .text_box {
+        width: 80%; /* For smaller screens, adjust width to 80% */
+        padding: 15px; /* Reduce padding further */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text_box {
+        width: 90%; /* On very small screens, take up 90% of the width */
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .center_buttons {
+        margin: 10px auto; /* Ensure buttons are centered and have some space around them */
+    }
 }
