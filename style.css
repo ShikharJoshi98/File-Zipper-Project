@@ -2,6 +2,8 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .text_box {
@@ -11,6 +13,7 @@ html, body {
     border: 1px solid lightgray;
     display: flex;
     flex-wrap: wrap;
+    
     align-content: center;
     margin: 0 auto; /* Centering the text_box horizontally */
 }
